@@ -1,0 +1,114 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}  % Para imágenes si las usas
+\graphicspath{{../figuras/}}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\usepackage[style=numeric, backend=biber]{biblatex}
+\addbibresource{referencias.bib}  % Sin .bib al final
+
+\usepackage{float}
+
+%----------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------
+
+% Title Page
+\title{Reporte de Resultados: Vida Media}
+\author{Josuep Simon Turmero Brito}
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------
+
+\section{Resumen Teórico}
+\subsection*{Isótopo}
+Se conoce como \textbf{isótopos} a aquellos \textbf{núclidos} que, a pesar de pertenecer al mismo elemento químico, no poseen las mismas propiedades físicas ni la misma masa atómica debido a que presentan \textbf{distinto número másico}. Entre ellos existen los \textbf{isótopos radiactivos}, los cuales se encuentran en un estado de inestabilidad energética debido a que la proporción entre el número de protones y neutrones no otorga estabilidad al núcleo. Por ello, el isótopo tiende a estabilizarse mediante el \textbf{proceso de decaimiento radiactivo}, un fenómeno físico de naturaleza estocástica mediante el cual un núcleo atómico inestable pierde energía emitiendo radiación en forma de partículas u ondas electromagnéticas.
+
+\subsection*{Decaimiento radiactivo}
+La radiación emitida no siempre es la misma; existen varios tipos de desintegración, como la \textbf{desintegración alfa, beta y emisión gamma}, cada una con diferentes características y niveles de penetración en la materia. Debido a su comportamiento probabilístico, no es posible predecir con exactitud cuándo un átomo individual se desintegrará; sin embargo, sí es posible describir el comportamiento de grandes conjuntos de átomos mediante leyes estadísticas.
+
+La descripción cuantitativa del decaimiento se expresa mediante la ecuación de decaimiento exponencial:
+
+\[
+N(t) = N_0 e^{(-\lambda t)}
+\]
+
+donde $N(t)$ es la cantidad de núcleos restantes en el tiempo $t$, $N_0$ es la cantidad inicial, $\lambda$ es la constante de decaimiento y $e$ es la base del logaritmo natural. Esta ecuación indica que la cantidad de material \textbf{radiactivo} disminuye de forma exponencial con el tiempo.
+
+\subsection*{Vida media}
+El \textbf{tiempo de vida media}, también conocido como \textbf{semivida} o \textbf{$T_{1/2}$}, es el tiempo necesario para que la mitad de los núcleos de una muestra radiactiva se desintegren. La semivida no depende de la cantidad inicial de material, sino únicamente de la constante de desintegración, por lo que constituye un valor característico de cada elemento o isótopo. Su expresión cuantitativa se obtiene a partir de la ley general de desintegración radiactiva:
+
+\[
+T_{1/2} = \frac{\ln 2}{\lambda}
+\]
+
+Para determinar el tiempo de vida media a partir de una muestra, se mide la actividad radiactiva en distintos intervalos de tiempo y se observa cuándo esta se reduce al 50 \% de su valor inicial. Este procedimiento suele apoyarse en instrumentos de detección de radiación, como contadores Geiger o detectores de centelleo.
+
+Los métodos de análisis incluyen la recolección de datos experimentales, la construcción de gráficas de actividad en función del tiempo y el ajuste de curvas exponenciales. Los resultados esperados muestran una disminución progresiva y predecible de la radiación, lo cual permite estimar con precisión la vida media del material estudiado. Este concepto es fundamental en áreas como la medicina nuclear, la datación arqueológica y la gestión de residuos radiactivos.
+
+%----------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------
+
+\section{Objetivo del experimento simulado}
+
+
+%----------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------
+
+\section{Gráfica de resultados}
+La Figura \ref{fig:img1} muestra la gráfica generada en hoja de cálculo, que representa el número de partículas restantes versus tiempo. 
+
+% AQUÍ INSERTAS TU GRÁFICA DE HOJA DE CÁLCULO
+% Exporta como PDF desde Excel/LibreOffice y coloca aquí:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{datos_originales_Rh99.png}
+	\caption{Decaimiento radiactivo simulado. Los datos muestran una disminución exponencial clara del número de partículas con el tiempo.}
+	\label{fig:img1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{linealización_decaimiento_Rh99.png}
+	\caption{Decaimiento radiactivo simulado. Los datos muestran una disminución exponencial clara del número de partículas con el tiempo.}
+	\label{fig:img2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{datos_5_half_life_Rh99.png}
+	\caption{Decaimiento radiactivo simulado. Los datos muestran una disminución exponencial clara del número de partículas con el tiempo.}
+	\label{fig:img3}
+\end{figure}
+
+%----------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------
+
+\section{Discusión de resultados}
+La curva obtenida presenta la característica forma exponencial decreciente típica del decaimiento radiactivo. Inicialmente, la pendiente es pronunciada (alta tasa de desintegración), pero se aplana progresivamente conforme menos átomos permanecen disponibles para desintegrarse. Visualmente, la vida media corresponde al tiempo necesario para que la curva descienda a la mitad de su valor inicial (de $N_0$ a $N_0/2$), lo cual se observa claramente en la intersección con la recta horizontal al 50\% del eje Y. Esta relación directa entre la geometría de la curva y el concepto físico confirma la validez del modelo exponencial y permite estimar $\tau = \frac{\ln 2}{\lambda}$ directamente desde la gráfica.[web:32]
+
+El modelo exponencial se basa en \cite{curso}. 
+Cita en texto: \cite{nuevo_video}
+
+%----------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------
+
+\section{Referencias}
+\nocite{*}
+\printbibliography[heading=none]
+
+\end{document}          

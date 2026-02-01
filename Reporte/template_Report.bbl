@@ -1,0 +1,91 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{nuevo_video}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4d5d7b132e5e188d0595c53f50e00c1a}{%
+           family={Channel},
+           familyi={C\bibinitperiod},
+           given={YouTube},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d5d7b132e5e188d0595c53f50e00c1a}
+      \strng{fullhash}{4d5d7b132e5e188d0595c53f50e00c1a}
+      \strng{bibnamehash}{4d5d7b132e5e188d0595c53f50e00c1a}
+      \strng{authorbibnamehash}{4d5d7b132e5e188d0595c53f50e00c1a}
+      \strng{authornamehash}{4d5d7b132e5e188d0595c53f50e00c1a}
+      \strng{authorfullhash}{4d5d7b132e5e188d0595c53f50e00c1a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://youtube.com/ejemplo}}
+      \field{title}{Simulación de Decaimiento Exponencial}
+      \field{year}{2026}
+    \endentry
+    \entry{curso}{misc}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Curso El-Bongo Physics: Decaimiento Radiactivo}
+      \field{year}{2026}
+    \endentry
+    \entry{halliday}{book}{}
+      \name{author}{3}{}{%
+        {{hash=e3eca1cb2cc1e0da062f7fe864ec21a2}{%
+           family={Halliday},
+           familyi={H\bibinitperiod}}}%
+        {{hash=470604ec8499dd0f95558f446090a0ff}{%
+           family={Resnick},
+           familyi={R\bibinitperiod}}}%
+        {{hash=d719083f59856e34a37e2137e2241d80}{%
+           family={Walker},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{69356506b52ed10cc291dffafcf8780a}
+      \strng{fullhash}{69356506b52ed10cc291dffafcf8780a}
+      \strng{bibnamehash}{69356506b52ed10cc291dffafcf8780a}
+      \strng{authorbibnamehash}{69356506b52ed10cc291dffafcf8780a}
+      \strng{authornamehash}{69356506b52ed10cc291dffafcf8780a}
+      \strng{authorfullhash}{69356506b52ed10cc291dffafcf8780a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fundamentals of Physics}
+      \field{year}{2018}
+      \true{nocite}
+    \endentry
+    \entry{tarea}{misc}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{title}{Tarea 2.3: Vida Media Rh-99}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
