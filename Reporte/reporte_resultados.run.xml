@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>template_Report.bcf</file>
+      <file>reporte_resultados.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>template_Report.bbl</file>
+      <file>reporte_resultados.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -63,23 +63,23 @@
       <file>spanish.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>template_Report</infile>
+      <infile>reporte_resultados</infile>
     </cmdline>
     <input>
-      <file>template_Report.bcf</file>
+      <file>reporte_resultados.bcf</file>
     </input>
     <output>
-      <file>template_Report.bbl</file>
+      <file>reporte_resultados.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>template_Report.bbl</file>
+      <file>reporte_resultados.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>template_Report.bcf</file>
+      <file>reporte_resultados.bcf</file>
     </requires>
     <requires type="editable">
       <file>referencias.bib</file>

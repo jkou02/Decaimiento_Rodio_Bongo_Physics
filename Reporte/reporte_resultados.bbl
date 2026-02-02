@@ -19,6 +19,28 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{wikipedia_isotopes_rhodium}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/wiki/Isotopes_of_rhodium}}
+      \field{note}{Accessed: Ene. 31, 2026}
+      \field{title}{Isotopes of rhodium}
+      \field{year}{2025}
+    \endentry
     \entry{studysmarter_radiactividad}{misc}{}
       \name{author}{1}{}{%
         {{hash=30d8363c7db089091197f57cda512266}{%
@@ -53,7 +75,7 @@
       \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -61,29 +83,6 @@
       \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Isotope&oldid=1329534480}}
       \field{note}{Accessed: Ene. 28, 2026}
       \field{title}{Isotope}
-      \field{year}{2025}
-      \true{nocite}
-    \endentry
-    \entry{wikipedia_isotopes_rhodium}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
-           family={{Wikipedia contributors}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://en.wikipedia.org/wiki/Isotopes_of_rhodium}}
-      \field{note}{Accessed: Ene. 31, 2026}
-      \field{title}{Isotopes of rhodium}
       \field{year}{2025}
       \true{nocite}
     \endentry

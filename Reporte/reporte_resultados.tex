@@ -24,7 +24,7 @@
 % Title Page
 \title{Reporte de Resultados: Vida Media}
 \author{Josuep Simon Turmero Brito}
-\date{\today}
+\date{}
 
 \begin{document}
 	\maketitle
@@ -34,6 +34,36 @@
 	\tableofcontents
 	\newpage
 
+%----------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------
+
+\section{Resumen Teórico}
+\subsection*{Isótopo}
+Se conoce como \textbf{isótopos} a aquellos \textbf{núclidos} que, a pesar de pertenecer al mismo elemento químico, no poseen las mismas propiedades físicas ni la misma masa atómica debido a que presentan \textbf{distinto número másico}. Entre ellos existen los \textbf{isótopos radiactivos}, los cuales se encuentran en un estado de inestabilidad energética debido a que la proporción entre el número de protones y neutrones no otorga estabilidad al núcleo. Por ello, el isótopo tiende a estabilizarse mediante el \textbf{proceso de decaimiento radiactivo}, un fenómeno físico de naturaleza estocástica mediante el cual un núcleo atómico inestable pierde energía emitiendo radiación en forma de partículas u ondas electromagnéticas.
+
+\subsection*{Decaimiento radiactivo}
+La radiación emitida no siempre es la misma; existen varios tipos de desintegración, como la \textbf{desintegración alfa, beta y emisión gamma}, cada una con diferentes características y niveles de penetración en la materia. Debido a su comportamiento probabilístico, no es posible predecir con exactitud cuándo un átomo individual se desintegrará; sin embargo, sí es posible describir el comportamiento de grandes conjuntos de átomos mediante leyes estadísticas.
+
+La descripción cuantitativa del decaimiento se expresa mediante la ecuación de decaimiento exponencial:
+
+\begin{equation} \label{ecu.1}
+	N(t) = N_0 e^{(-\lambda t)}
+\end{equation}
+
+
+
+donde $N(t)$ es la cantidad de núcleos restantes en el tiempo $t$, $N_0$ es la cantidad inicial, $\lambda$ es la constante de decaimiento y $e$ es la base del logaritmo natural. Esta ecuación indica que la cantidad de material \textbf{radiactivo} disminuye de forma exponencial con el tiempo.
+
+\subsection*{Vida media}
+El \textbf{tiempo de vida media}, también conocido como \textbf{semivida} o \textbf{$T_{1/2}$}, es el tiempo necesario para que la mitad de los núcleos de una muestra radiactiva se desintegren. La semivida no depende de la cantidad inicial de material, sino únicamente de la constante de desintegración, por lo que constituye un valor característico de cada elemento o isótopo. Su expresión cuantitativa se obtiene a partir de la ley general de desintegración radiactiva:
+
+\begin{equation} \label{ecu.2}
+T_{1/2} = \frac{\ln 2}{\lambda}
+\end{equation}
+
+Para determinar el tiempo de vida media a partir de una muestra, se mide la actividad radiactiva en distintos intervalos de tiempo y se observa cuándo esta se reduce al 50 \% de su valor inicial. Este procedimiento suele apoyarse en instrumentos de detección de radiación, como contadores Geiger o detectores de centelleo.
+
+Los métodos de análisis incluyen la recolección de datos experimentales, la construcción de gráficas de actividad en función del tiempo y el ajuste de curvas exponenciales. Los resultados esperados muestran una disminución progresiva y predecible de la radiación, lo cual permite estimar con precisión la vida media del material estudiado. Este concepto es fundamental en áreas como la medicina nuclear, la datación arqueológica y la gestión de residuos radiactivos.
 
 %----------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------
@@ -79,13 +109,13 @@ Por tanto, resulta relevante determinar la constante de desintegración $\lambda
 
 Para determinar el valor de $\lambda$, se calculó el logaritmo natural de las actividades medidas, linealizando la relación exponencial. A partir de la ley de decaimiento
 
-\begin{equation} \label{ecu.1}
+\begin{equation} \label{ecu.3}
 	A(t)=A_0 e^{-\lambda t}
 \end{equation}
 
 se obtiene
 
-\begin{equation} \label{ecu.2}
+\begin{equation} \label{ecu.4}
 	\ln{A(t)}=\ln{A_0} - \lambda t 
 \end{equation}
 
@@ -93,17 +123,12 @@ la cual tiene la forma de una recta $y=b+mx$. Por comparación, $-\lambda$ corre
 
 En la figura \ref{fig:img2} se muestra la representación de $\ln A(t)$ en función del tiempo, junto con el ajuste lineal obtenido. Considerando el valor de $R^{2}$, se observa un excelente ajuste de los puntos con la recta, evidenciando que los datos siguen muy de cerca la ley de decaimiento exponencial y permitiendo obtener que $\lambda$ posee un valor de $(0.04308\pm0.00004) \text{ días}^{-1}$.\\
 
-Ya con el valor de $\lambda$, resta calcular el tiempo de vida media, dado por
+Ya con el valor de $\lambda$ y usando la ecuación \ref{ecu.2}, se calcula el tiempo de vida media, obteniendo, como se observa en la figura \ref{fig:img2}, que $T_{1/2}$ es igual a $16.09\text{ días}$, correspondiendo a la vida media de un isótopo del rodio $(Rh)$, específicamente, el Rodio-99 ($^{99}Rh$) \cite{wikipedia_isotopes_rhodium}.\\
 
-\begin{equation} \label{ecu.3}
-	T_{1/2} = \frac{\ln{2}}{\lambda}
-\end{equation}
+Por último, se tiene que en el apartado proyecto del notebook, se plantea la pregunta ¿Puedes preparar una representación gráfica que muestre 5 vidas medias? 
 
-Obteniendo, como se observa en la figura \ref{fig:img2}, que $T_{1/2}$ es igual a $16.09\text{ días}$, lo cual corresponde a la vida media de uno de los isótopos del rodio $(Rh)$, específicamente, el Rodio-99 ($^{99}Rh$) \cite{wikipedia_isotopes_rhodium}.\\
+En respuesta a esta pregunta, se construyó la gráfica de la figura \ref{fig:img3}, donde se presentan cinco valores en los que el isótopo alcanza la mitad de la actividad que tenía $16.09 \text{ días}$ antes. En la misma, imagen también se puede observar, el día al que corresponde la medición y la actividad correspondiente.
 
-Por último, se tiene el reto propuesto en el notebook, en el apartado proyecto, donde se plantea pregunta ¿Puedes preparar una representación gráfica que muestre 5 vidas medias? 
-
-En respuesta a esta pregunta, se construyó la gráfica de la figura \ref{fig:img3}, donde se presentan cinco puntos en los que el isótopo alcanza la mitad de actividad que tenía $16.09 \text{ días}$ antes. En la misma, imagen también se puede observar, a que día corresponde la medición y la medida de actividad correspondiente a ese día.
 %----------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------
 
