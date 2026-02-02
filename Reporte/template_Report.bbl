@@ -18,70 +18,138 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{nuevo_video}{misc}{}
+  \datalist[entry]{none/global//global/global}
+    \entry{studysmarter_radiactividad}{misc}{}
       \name{author}{1}{}{%
-        {{hash=4d5d7b132e5e188d0595c53f50e00c1a}{%
-           family={Channel},
-           familyi={C\bibinitperiod},
-           given={YouTube},
-           giveni={Y\bibinitperiod}}}%
+        {{hash=30d8363c7db089091197f57cda512266}{%
+           family={{StudySmarter}},
+           familyi={S\bibinitperiod}}}%
       }
-      \strng{namehash}{4d5d7b132e5e188d0595c53f50e00c1a}
-      \strng{fullhash}{4d5d7b132e5e188d0595c53f50e00c1a}
-      \strng{bibnamehash}{4d5d7b132e5e188d0595c53f50e00c1a}
-      \strng{authorbibnamehash}{4d5d7b132e5e188d0595c53f50e00c1a}
-      \strng{authornamehash}{4d5d7b132e5e188d0595c53f50e00c1a}
-      \strng{authorfullhash}{4d5d7b132e5e188d0595c53f50e00c1a}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \strng{namehash}{30d8363c7db089091197f57cda512266}
+      \strng{fullhash}{30d8363c7db089091197f57cda512266}
+      \strng{bibnamehash}{30d8363c7db089091197f57cda512266}
+      \strng{authorbibnamehash}{30d8363c7db089091197f57cda512266}
+      \strng{authornamehash}{30d8363c7db089091197f57cda512266}
+      \strng{authorfullhash}{30d8363c7db089091197f57cda512266}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{\url{https://youtube.com/ejemplo}}
-      \field{title}{Simulación de Decaimiento Exponencial}
-      \field{year}{2026}
-    \endentry
-    \entry{curso}{misc}{}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labeltitlesource}{title}
-      \field{title}{Curso El-Bongo Physics: Decaimiento Radiactivo}
-      \field{year}{2026}
-    \endentry
-    \entry{halliday}{book}{}
-      \name{author}{3}{}{%
-        {{hash=e3eca1cb2cc1e0da062f7fe864ec21a2}{%
-           family={Halliday},
-           familyi={H\bibinitperiod}}}%
-        {{hash=470604ec8499dd0f95558f446090a0ff}{%
-           family={Resnick},
-           familyi={R\bibinitperiod}}}%
-        {{hash=d719083f59856e34a37e2137e2241d80}{%
-           family={Walker},
-           familyi={W\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley}%
-      }
-      \strng{namehash}{69356506b52ed10cc291dffafcf8780a}
-      \strng{fullhash}{69356506b52ed10cc291dffafcf8780a}
-      \strng{bibnamehash}{69356506b52ed10cc291dffafcf8780a}
-      \strng{authorbibnamehash}{69356506b52ed10cc291dffafcf8780a}
-      \strng{authornamehash}{69356506b52ed10cc291dffafcf8780a}
-      \strng{authorfullhash}{69356506b52ed10cc291dffafcf8780a}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Fundamentals of Physics}
-      \field{year}{2018}
+      \field{howpublished}{\url{https://www.studysmarter.es/resumenes/fisica/fisica-nuclear/radiactividad/}}
+      \field{note}{Accessed: Ene. 28, 2026}
+      \field{title}{Radiactividad: Definición, Tipos y Elementos}
+      \field{year}{2022}
       \true{nocite}
     \endentry
-    \entry{tarea}{misc}{}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+    \entry{wikipedia_isotope}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Tarea 2.3: Vida Media Rh-99}
+      \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Isotope&oldid=1329534480}}
+      \field{note}{Accessed: Ene. 28, 2026}
+      \field{title}{Isotope}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{wikipedia_isotopes_rhodium}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/wiki/Isotopes_of_rhodium}}
+      \field{note}{Accessed: Ene. 31, 2026}
+      \field{title}{Isotopes of rhodium}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{radioactivity_decay_law}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c527bb3bc288d82ba69226c8a77b82a3}{%
+           family={{French Physics Community}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{c527bb3bc288d82ba69226c8a77b82a3}
+      \strng{fullhash}{c527bb3bc288d82ba69226c8a77b82a3}
+      \strng{bibnamehash}{c527bb3bc288d82ba69226c8a77b82a3}
+      \strng{authorbibnamehash}{c527bb3bc288d82ba69226c8a77b82a3}
+      \strng{authornamehash}{c527bb3bc288d82ba69226c8a77b82a3}
+      \strng{authorfullhash}{c527bb3bc288d82ba69226c8a77b82a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://radioactivity.eu.com/categories/phenomenon/radioactive_decay}}
+      \field{note}{Accessed: Ene. 29, 2026}
+      \field{title}{Radioactive decay law}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+    \entry{foronuclear_radiactividad}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8bb49831838e453f79205fdc8e8157f2}{%
+           family={{Foro Nuclear}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{8bb49831838e453f79205fdc8e8157f2}
+      \strng{fullhash}{8bb49831838e453f79205fdc8e8157f2}
+      \strng{bibnamehash}{8bb49831838e453f79205fdc8e8157f2}
+      \strng{authorbibnamehash}{8bb49831838e453f79205fdc8e8157f2}
+      \strng{authornamehash}{8bb49831838e453f79205fdc8e8157f2}
+      \strng{authorfullhash}{8bb49831838e453f79205fdc8e8157f2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.foronuclear.org/descubre-la-energia-nuclear/preguntas-y-respuestas/sobre-proteccion-radiologica-y-radiacion/que-es-la-radiactividad/}}
+      \field{note}{Accessed: Ene. 28, 2026}
+      \field{title}{¿Qué es la radiactividad?}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+    \entry{balseiro_radiactividad}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=63929d9326ef2b68fd3d577ef543d605}{%
+           family={{Instituto Balseiro}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{63929d9326ef2b68fd3d577ef543d605}
+      \strng{fullhash}{63929d9326ef2b68fd3d577ef543d605}
+      \strng{bibnamehash}{63929d9326ef2b68fd3d577ef543d605}
+      \strng{authorbibnamehash}{63929d9326ef2b68fd3d577ef543d605}
+      \strng{authornamehash}{63929d9326ef2b68fd3d577ef543d605}
+      \strng{authorfullhash}{63929d9326ef2b68fd3d577ef543d605}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.ib.edu.ar/fisica-exp/images/9/9b/Modulo_1_-_Elementos_de_Radiactividad.pdf}}
+      \field{note}{Física Experimental I - Laboratorio I. Accessed: Feb. 01, 2026}
+      \field{title}{Módulo 1 - Elementos de Radiactividad}
       \field{year}{2026}
       \true{nocite}
     \endentry

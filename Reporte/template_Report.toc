@@ -1,6 +1,5 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {0.1}Resumen Teórico}{2}{}%
-\contentsline {section}{\numberline {0.2}Objetivo del experimento simulado}{3}{}%
-\contentsline {section}{\numberline {0.3}Gráfica de resultados}{3}{}%
-\contentsline {section}{\numberline {0.4}Discusión de resultados}{4}{}%
-\contentsline {section}{\numberline {0.5}Referencias}{4}{}%
+\contentsline {section}{\numberline {0.1}Objetivo del experimento simulado}{2}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Gráfica de resultados}{2}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Discusión de resultados}{3}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Referencias}{4}{section.0.4}%

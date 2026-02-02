@@ -1,19 +1,22 @@
 \documentclass[12pt, a4paper]{report}
-\usepackage[utf8]{inputenc}
+
 \usepackage[spanish]{babel}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}  % ← AGREGAR ESTA LÍNEA
 
-\usepackage{graphicx}  % Para imágenes si las usas
+\usepackage{graphicx}
 \graphicspath{{../figuras/}}
 
 \usepackage{amsmath}
 \usepackage{geometry}
 \geometry{margin=2.5cm}
 
-\usepackage[style=numeric, backend=biber]{biblatex}
-\addbibresource{referencias.bib}  % Sin .bib al final
+\usepackage[style=ieee, backend=biber]{biblatex}
+\addbibresource{referencias.bib}
 
 \usepackage{float}
+\usepackage{hyperref}  % ← ÚTIL para URLs con acentos
 
 %----------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------
@@ -24,41 +27,13 @@
 \date{\today}
 
 \begin{document}
-\maketitle
-\thispagestyle{empty}
-\newpage
+	\maketitle
+	\thispagestyle{empty}
+	\newpage
+	
+	\tableofcontents
+	\newpage
 
-\tableofcontents
-\newpage
-
-%----------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------
-
-\section{Resumen Teórico}
-\subsection*{Isótopo}
-Se conoce como \textbf{isótopos} a aquellos \textbf{núclidos} que, a pesar de pertenecer al mismo elemento químico, no poseen las mismas propiedades físicas ni la misma masa atómica debido a que presentan \textbf{distinto número másico}. Entre ellos existen los \textbf{isótopos radiactivos}, los cuales se encuentran en un estado de inestabilidad energética debido a que la proporción entre el número de protones y neutrones no otorga estabilidad al núcleo. Por ello, el isótopo tiende a estabilizarse mediante el \textbf{proceso de decaimiento radiactivo}, un fenómeno físico de naturaleza estocástica mediante el cual un núcleo atómico inestable pierde energía emitiendo radiación en forma de partículas u ondas electromagnéticas.
-
-\subsection*{Decaimiento radiactivo}
-La radiación emitida no siempre es la misma; existen varios tipos de desintegración, como la \textbf{desintegración alfa, beta y emisión gamma}, cada una con diferentes características y niveles de penetración en la materia. Debido a su comportamiento probabilístico, no es posible predecir con exactitud cuándo un átomo individual se desintegrará; sin embargo, sí es posible describir el comportamiento de grandes conjuntos de átomos mediante leyes estadísticas.
-
-La descripción cuantitativa del decaimiento se expresa mediante la ecuación de decaimiento exponencial:
-
-\[
-N(t) = N_0 e^{(-\lambda t)}
-\]
-
-donde $N(t)$ es la cantidad de núcleos restantes en el tiempo $t$, $N_0$ es la cantidad inicial, $\lambda$ es la constante de decaimiento y $e$ es la base del logaritmo natural. Esta ecuación indica que la cantidad de material \textbf{radiactivo} disminuye de forma exponencial con el tiempo.
-
-\subsection*{Vida media}
-El \textbf{tiempo de vida media}, también conocido como \textbf{semivida} o \textbf{$T_{1/2}$}, es el tiempo necesario para que la mitad de los núcleos de una muestra radiactiva se desintegren. La semivida no depende de la cantidad inicial de material, sino únicamente de la constante de desintegración, por lo que constituye un valor característico de cada elemento o isótopo. Su expresión cuantitativa se obtiene a partir de la ley general de desintegración radiactiva:
-
-\[
-T_{1/2} = \frac{\ln 2}{\lambda}
-\]
-
-Para determinar el tiempo de vida media a partir de una muestra, se mide la actividad radiactiva en distintos intervalos de tiempo y se observa cuándo esta se reduce al 50 \% de su valor inicial. Este procedimiento suele apoyarse en instrumentos de detección de radiación, como contadores Geiger o detectores de centelleo.
-
-Los métodos de análisis incluyen la recolección de datos experimentales, la construcción de gráficas de actividad en función del tiempo y el ajuste de curvas exponenciales. Los resultados esperados muestran una disminución progresiva y predecible de la radiación, lo cual permite estimar con precisión la vida media del material estudiado. Este concepto es fundamental en áreas como la medicina nuclear, la datación arqueológica y la gestión de residuos radiactivos.
 
 %----------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------
@@ -71,27 +46,24 @@ Estudiar el tiempo de vida media de un elemento inestable desconocido.
 
 \section{Gráfica de resultados}
 
-
-% AQUÍ INSERTAS TU GRÁFICA DE HOJA DE CÁLCULO
-% Exporta como PDF desde Excel/LibreOffice y coloca aquí:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{datos_originales_Rh99.png}
-	\caption{Decaimiento radiactivo simulado. Los datos muestran una disminución exponencial clara del número de partículas con el tiempo.}
+	\caption{Curva de decaimiento radiactivo del elemento inestable desconocido usando datos simulados.}
 	\label{fig:img1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{linealización_decaimiento_Rh99.png}
-	\caption{Decaimiento radiactivo simulado. Los datos muestran una disminución exponencial clara del número de partículas con el tiempo.}
+	\caption{Linealización con logaritmos para determinar la constante de decaimiento del elemento mediante la ecuación de una recta.}
 	\label{fig:img2}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{datos_5_half_life_Rh99.png}
-	\caption{Decaimiento radiactivo simulado. Los datos muestran una disminución exponencial clara del número de partículas con el tiempo.}
+	\caption{Representación gráfica de 5 vidas medias consecutivas del isótopo. Los puntos marcados corresponden a los instantes en que la actividad se reduce a la mitad respecto al valor 16.09 días anteriores.}
 	\label{fig:img3}
 \end{figure}
 
@@ -99,11 +71,39 @@ Estudiar el tiempo de vida media de un elemento inestable desconocido.
 %----------------------------------------------------------------------------------
 
 \section{Discusión de resultados}
-La curva obtenida presenta la característica forma exponencial decreciente típica del decaimiento radiactivo. Inicialmente, la pendiente es pronunciada (alta tasa de desintegración), pero se aplana progresivamente conforme menos átomos permanecen disponibles para desintegrarse. Visualmente, la vida media corresponde al tiempo necesario para que la curva descienda a la mitad de su valor inicial (de $N_0$ a $N_0/2$), lo cual se observa claramente en la intersección con la recta horizontal al 50\% del eje Y. Esta relación directa entre la geometría de la curva y el concepto físico confirma la validez del modelo exponencial y permite estimar $\tau = \frac{\ln 2}{\lambda}$ directamente desde la gráfica.[web:32]
+Haciendo uso de los datos proporcionados por el notebook indicado en las instrucciones de la actividad, se dispuso de 10 mediciones de la actividad de un isótopo radiactivo inestable, distribuidas a lo largo de un intervalo de 90 días.\\
 
-El modelo exponencial se basa en \cite{curso}. 
-Cita en texto: \cite{nuevo_video}
+A continuación se procedió a graficar los datos de las mediciones con el fin de observar la naturaleza de los mismo. En la figura \ref{fig:img1} se presenta la actividad medida en función del tiempo. Donde la tendencia decreciente y suavemente curvada es cualitativamente compatible con el comportamiento de la ley de decaimiento exponencial, tal como se espera teóricamente para la desintegración radiactiva de un isótopo inestable.\\
 
+Por tanto, resulta relevante determinar la constante de desintegración $\lambda$, dado que se trata de una propiedad característica del isótopo y permite relacionar experimentalmente los datos con un valor concreto de semivida tabulada.\\
+
+Para determinar el valor de $\lambda$, se calculó el logaritmo natural de las actividades medidas, linealizando la relación exponencial. A partir de la ley de decaimiento
+
+\begin{equation} \label{ecu.1}
+	A(t)=A_0 e^{-\lambda t}
+\end{equation}
+
+se obtiene
+
+\begin{equation} \label{ecu.2}
+	\ln{A(t)}=\ln{A_0} - \lambda t 
+\end{equation}
+
+la cual tiene la forma de una recta $y=b+mx$. Por comparación, $-\lambda$ corresponde a la pendiente de la misma y puede determinarse mediante una regresión lineal por mínimos cuadrados.
+
+En la figura \ref{fig:img2} se muestra la representación de $\ln A(t)$ en función del tiempo, junto con el ajuste lineal obtenido. Considerando el valor de $R^{2}$, se observa un excelente ajuste de los puntos con la recta, evidenciando que los datos siguen muy de cerca la ley de decaimiento exponencial y permitiendo obtener que $\lambda$ posee un valor de $(0.04308\pm0.00004) \text{ días}^{-1}$.\\
+
+Ya con el valor de $\lambda$, resta calcular el tiempo de vida media, dado por
+
+\begin{equation} \label{ecu.3}
+	T_{1/2} = \frac{\ln{2}}{\lambda}
+\end{equation}
+
+Obteniendo, como se observa en la figura \ref{fig:img2}, que $T_{1/2}$ es igual a $16.09\text{ días}$, lo cual corresponde a la vida media de uno de los isótopos del rodio $(Rh)$, específicamente, el Rodio-99 ($^{99}Rh$) \cite{wikipedia_isotopes_rhodium}.\\
+
+Por último, se tiene el reto propuesto en el notebook, en el apartado proyecto, donde se plantea pregunta ¿Puedes preparar una representación gráfica que muestre 5 vidas medias? 
+
+En respuesta a esta pregunta, se construyó la gráfica de la figura \ref{fig:img3}, donde se presentan cinco puntos en los que el isótopo alcanza la mitad de actividad que tenía $16.09 \text{ días}$ antes. En la misma, imagen también se puede observar, a que día corresponde la medición y la medida de actividad correspondiente a ese día.
 %----------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------
 
